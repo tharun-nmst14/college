@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- Header with Logo and College Name -->
+<header class="app-header">
+    <div class="header-left">
+        <img src="/static/logo.jpeg" alt="College Logo" class="logo">
+    </div>
+    <div class="header-center">
+        <h1 class="college-title">RAJIV GANDHI UNIVERSITY OF KNOWLEDGE TECHNOLOGIES</h1>
+        <h2 class="college-sub">IIIT BASAR</h2>
+    </div>
+</header>
+
+<!-- Main Title -->
+<h2>TS EAMCET College Predictor</h2>
+
+<!-- Prediction Form -->
+<form method="POST" action="/predict">
+    <label>Rank:</label>
+    <input type="number" name="rank" required>
+
+    <label>Caste:</label>
+    <select name="caste" required>
+        <option>OC</option>
+        <option>BC_A</option>
+        <option>BC_B</option>
+        <option>BC_C</option>
+        <option>BC_D</option>
+        <option>BC_E</option>
+        <option>SC</option>
+        <option>ST</option>
+        <option>EWS</option>
+    </select>
+
+    <label>Gender:</label>
+    <select name="gender" required>
+        <option>Male</option>
+        <option>Female</option>
+    </select>
+
+    <label>Preferred Branch (e.g., CSE, EEE):</label>
+    <input type="text" name="branch" required>
+
+    <label>Number of Colleges to Show:</label>
+    <input type="number" name="num_colleges" value="5" required>
+
+    <label><strong>Select Preferred Places:</strong></label><br>
+    {% for place in places %}
+        <input type="checkbox" name="selected_places" value="{{ place }}"> {{ place }}<br>
+    {% endfor %}
+    <br>
+
+    <input type="submit" value="Predict">
+</form>
+
+<!-- Footer -->
+<footer class="footer">
+    <p id="copy">© Azmeera Tharun CSE – 2026</p>
+</footer>
+
+</body>
+</html>

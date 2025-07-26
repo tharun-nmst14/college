@@ -1,0 +1,183 @@
+/* Global Reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f1f5f9, #e0f7fa);
+}
+
+/* Header */
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    padding: 15px 20px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.header-left {
+    flex: 0 0 auto;
+}
+
+.header-center {
+    text-align: center;
+    flex: 1;
+}
+
+.college-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.college-sub {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* Main Heading */
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin: 25px 0 10px;
+}
+
+/* Form Styling */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 600px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-top: 12px;
+    color: #333;
+}
+
+input[type="number"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 15px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to right, #0056b3, #00b0e0);
+    transform: scale(1.02);
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+    margin-right: 6px;
+    margin-top: 6px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f3f3f3;
+    margin-top: 30px;
+    color: #444;
+    font-size: 14px;
+}
+
+#copy {
+    color: black;
+}
+
+/* Result Page Table */
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    font-size: 15px;
+}
+
+th, td {
+    padding: 14px 16px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Error Message */
+p {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ffe5e5;
+    padding: 10px;
+    margin: 20px auto;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+/* Search Again Link */
+a {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: #007bff;
+    margin: 25px auto;
+    width: fit-content;
+    border: 2px solid #007bff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #007bff;
+    color: white;
+}
